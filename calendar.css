@@ -1,0 +1,39 @@
+table {
+    table-layout: fixed;
+}
+
+table.letrs-table thead {
+   background: #005587;
+   color: #ffffff;
+   text-align: center;
+}
+
+.modal-body p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+table.letrs-table p {
+    margin: 0;
+    font-size: .8rem;
+}
+
+.am {
+    color: #005587;
+}
+
+.pm {
+    color: #c31d27;
+}
+
+img.letrs-logo-modal {
+    width: 100px;
+}
+
+@media (min-width: 768px)
+{
+    .modal-dialog {
+        width: 900px;
+        margin: 30px auto;
+    }
+}

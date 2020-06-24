@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        LETRS Facilitator Trainings 2020 | Voyager Sopris Learning
+    </title>
+    <link href="/favicon.ico" rel="shortcut icon" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.2.504/styles/kendo.common.min.css">
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.2.504/styles/kendo.blueopal.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.css" rel="stylesheet">
+    <link
+        href="https://www.voyagersopris.com/ResourcePackages/Voyager/assets/dist/css/bundle.min-v-637178137180000000.css"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="calendar.css">
+    <script type="text/javascript">
+        var sf_appPath = '/';
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            const FORM_TIME_START = Math.floor((new Date).getTime() / 1000);
+            let formElement = document.getElementById("tfa_0");
+            if (null === formElement) {
+                formElement = document.getElementById("0");
+            }
+            let appendJsTimerElement = function () {
+                let formTimeDiff = Math.floor((new Date).getTime() / 1000) - FORM_TIME_START;
+                let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+                if (null !== cumulatedTimeElement) {
+                    let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                    if (null !== cumulatedTime && cumulatedTime > 0) {
+                        formTimeDiff += cumulatedTime;
+                    }
+                }
+                let jsTimeInput = document.createElement("input");
+                jsTimeInput.setAttribute("type", "hidden");
+                jsTimeInput.setAttribute("value", formTimeDiff.toString());
+                jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("autocomplete", "off");
+                if (null !== formElement) {
+                    formElement.appendChild(jsTimeInput);
+                }
+            };
+            if (null !== formElement) {
+                if (formElement.addEventListener) {
+                    formElement.addEventListener('submit', appendJsTimerElement, false);
+                } else if (formElement.attachEvent) {
+                    formElement.attachEvent('onsubmit', appendJsTimerElement);
+                }
+            }
+        });
+    </script>
+    <link href="https://www.tfaforms.com/form-builder/4.4.0/css/wforms-layout.css?v=521-9" rel="stylesheet"
+        type="text/css" />
+    <!--[if IE 8]>
+    <link href="https://www.tfaforms.com/form-builder/4.4.0/css/wforms-layout-ie8.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if IE 7]>
+    <link href="https://www.tfaforms.com/form-builder/4.4.0/css/wforms-layout-ie7.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if IE 6]>
+    <link href="https://www.tfaforms.com/form-builder/4.4.0/css/wforms-layout-ie6.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <link href="https://www.tfaforms.com/themes/get/47554" rel="stylesheet" type="text/css" />
+    <link href="https://www.tfaforms.com/form-builder/4.4.0/css/wforms-jsonly.css?v=521-9" rel="alternate stylesheet"
+        title="This stylesheet activated by javascript" type="text/css" />
+    <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.10/js/wforms.js?v=521-9"></script>
+    <meta name="robots" content="noindex" />
+    <style type="text/css" media="all">
+        .header-top-nav-wrapper ul li a {
+            font-size: 0.95rem;
+            text-transform: upprcase;
+        }
+
+        .navborder {
+            display: block;
+            padding: 15px;
+            border: none;
+        }
+
+        .product-banner .banner-content h2 {
+            font-size: 2.4rem !important;
+            font-style: italic;
+        }
+
+        .product-description .title {
+            font-style: italic;
+        }
+
+        .mtneglg {
+            margin-top: -40px;
+        }
+
+        .mtnegmd {
+            margin-top: -20px;
+        }
+
+        .mtlg {
+            margin-top: 40px;
+        }
+
+        .mtmd {
+            margin-top: 20px;
+        }
+
+        .flist p {
+            line-height: 0.7rem;
+        }
+
+        .blog .blog-post .post .image {
+            margin-bottom: 30px;
+            float: right;
+        }
+
+        .blog .topics ul li a,
+        .blog .years ul li a {
+            color: #333;
+            display: inline-block;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            transition: .25s;
+            font-size: 12px;
+        }
+
+        .news .news-post .tags,
+        .news .recent-news .post .tags {
+            display: none;
+        }
+
+        .resources .resource-list .resource-item .front .content .title {
+            text-transform: none;
+        }
+
+        .dropdown-menu-search {
+            left: calc(50% - -80px);
+        }
+    </style>
+    <style type="text/css" media="all">
+        @media only screen and (min-width : 1200px) {
+            .feature-info-band .h2 {
+                max-width: inherit;
+            }
+
+            .feature-info-band p {
+                max-width: inherit;
+            }
+        }
+
+        .button-nav li a.start-interactive-tour span {
+            margin-left: 25px;
+        }
+
+        a.start-interactive-tour span:before {
+            background-image: url('https://www.voyagersopris.com/ResourcePackages/Voyager/assets/dist/images/icons/tryit_idle.png');
+            height: 20px;
+            width: 15px;
+            top: 1px;
+        }
+
+        a.start-interactive-tour:hover span:before {
+            background-image: url('https://www.voyagersopris.com/ResourcePackages/Voyager/assets/dist/images/icons/tryit_active.png');
+        }
+
+        .main-content h1,
+        .page-summary h1 {
+            color: #2e333d;
+        }
+
+        .social-media-icons img {
+            width: 40px;
+            height: 40px;
+            margin: 8px;
+        }
+
+        .desktop-nav .dropdown-menu {
+            background-color: #004C7F !important;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .desktop-nav .dropdown-menu {
+                background-color: #004C7F !important;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .desktop-nav .dropdown-menu {
+                background-color: #004C7F !important;
+            }
+        }
+
+        .underline-blue {
+            border-bottom: 1px solid #0090d7;
+            width: 32px;
+            margin: 10px 0 20px
+        }
+
+        .not-italic {
+            font-style: normal
+        }
+
+        .dropdown-menu-featured-program h2.category-title,
+        .dropdown-menu-more-programs h2.category-title {
+            font-size: 12px;
+            color: #ccc;
+            text-transform: uppercase;
+            padding: 0;
+            text-align: left
+        }
+
+        .dropdown-menu-featured-program h3.product-name,
+        .dropdown-menu-featured-program a h3.product-name,
+        .dropdown-menu-more-programs h3.product-name,
+        .dropdown-menu-more-programs a h3.product-name {
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            font-style: italic
+        }
+
+        .dropdown-menu-featured-program a h3 sup,
+        .dropdown-menu-more-programs a h3 sup {
+            display: inline-block
+        }
+
+        .dropdown-menu-featured-program h3.product-name {
+            margin: 0 0 10px
+        }
+
+        .dropdown-menu-featured-program p.product-description {
+            font-size: 14px;
+            padding-right: 50px
+        }
+
+        .dropdown-menu-featured-program p>a,
+        .dropdown-menu-featured-program p>a:visited,
+        .dropdown-menu-featured-program p>a:active {
+            color: #fff;
+            font-size: 14px !important;
+            text-decoration: underline
+        }
+
+        .dropdown-menu-featured-program a.btn {
+            padding: 10px 20px !important;
+            color: #004c7f !important;
+            font-weight: 400 !important
+        }
+
+        .dropdown-menu-more-programs a h3.product-name {
+            margin: 0
+        }
+
+        .dropdown-menu-more-programs p.product-description {
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 20px
+        }
+
+        .dropdown-menu-more-programs a h4 {
+            font-size: 14px;
+            text-decoration: underline;
+            font-weight: 400;
+            color: #fff
+        }
+
+        @media only screen and (min-width:768px) {
+            .desktop-nav .dropdown-menu a {
+                font-size: 14px;
+                color: #fff;
+                font-weight: 400;
+                padding: 0
+            }
+
+            .desktop-nav .dropdown-menu a:hover,
+            .desktop-nav .dropdown-menu a:active {
+                color: #fff;
+                text-decoration: underline
+            }
+        }
+
+        @media(max-width:767px) {
+            .dropdown-menu-featured-program p.product-description {
+                padding-right: 0
+            }
+        }
+
+        .also-published {
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    <style type="text/css" media="all">
+        .main-content h1,
+        .page-summary h1 {
+            color: #2e333d;
+        }
+    </style>
+    <style type="text/css" media="all">
+        h3#tfa_0-T {
+            display: none;
+        }
+
+        .wForm .inputWrapper {
+            width: 280px;
+        }
+
+        .wForm select {
+            width: 280px;
+        }
+
+        .label {
+            text-align: left;
+        }
+    </style>
+    <meta name="Generator" content="Sitefinity 10.2.6634.0 MS" />
+    <link rel="canonical"
+        href="https://www.voyagersopris.com/professional-development/letrs/training-support/letrs-facilitator-trainings-2020" />
+</head>
+
+<body class="professional-development-theme">
+    <div class="slide-menu-wrapper">
+        <div class="slide-content">
+            <script
+                src="https://www.voyagersopris.com/ScriptResource.axd?d=a4YNUo5hIIwBkYFxNw55_QuDOqCP8QttEjzguRBJYeMg26-SaQDARuyS4X7A0Lob-CsZXrUxSi3ZeBS9Lb8bHEGWsNxx5SKG79AXVWqUAx_ccoyO94nq2MVXlRs1X2yhHic51di-I6sylDPMdQVdUPaDJrn46B2vvC1m43ZvGpg3Ds4QUOT4KtMXyFDpgTx_Rsyg-kuDNN_fuLkCOmERmQ2&amp;t=d1d8972"
+                type="text/javascript"></script>
+            <script
+                src="https://www.voyagersopris.com/ScriptResource.axd?d=dHWeTXXMUIruUSdbNS0XMp7TExyJW-aoScB1IIAefQc36Oy1UuLhpZrw-pL9j1p4nwhaOdCgZrr9EXaliKyygx6wqSrzxJi5SwcKrd0eAQ5ZSmwKO_zZZNsQ_8zgwGZ8onBwhaDOLXi21TXHEZmSMNQBES8k3yBnMpdtigADHQivU7xLfg4_3M1YmusNC1hmR3STBhIXVWIT5WNnpk-Q3Q2&amp;t=d1d8972"
+                type="text/javascript"></script>
+            <script
+                src="https://www.voyagersopris.com/ScriptResource.axd?d=mWzh_w5och69sCCyMuFvqNE21uRdn9m8utXJyn3_h-FsDHTxZYRrwtzsRYy0KfNhQVVvQT1OOfRkRBO0QxEH4ALWsTyvzQCM-uiHSJ5_dGmV73pWkNbwboH3qQeKNOoPULaLZHupHxpp4fAefYmGVtONCO24pikPMdtnn4ah5YdfkxdUspa9nLWD20zjpp3SAUGc8fgPagAje_tv-7Ck5A2&amp;t=d1d8972"
+                type="text/javascript"></script>
+            <header class="site-header">
+            </header>
+            <div id="Body_T10C0BC56016_Col00" class="sf_colsIn container-fluid" data-sf-element="Container"
+                data-placeholder-label="Container for hero banner">
+                <div class="general-content-page">
+                    <div class="banner product-banner basic">
+                        <div class="banner-content">
+                            <div class="container">
+                                <div id="Body_C051_Col00" class="sf_colsIn" data-sf-element="Banner Heading"
+                                    data-placeholder-label="Banner Heading">
+                                    <div>
+                                        <div>
+                                            <h1><span style="color:#ffffff;">LETRS</span></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Body_T10C0BC56018_Col00" class="sf_colsIn container-fluid" data-sf-element="Container"
+                data-placeholder-label="Container for all other product page content">
+                <div id="Body_C050_Col00" class="sf_colsIn container" data-sf-element="Container"
+                    data-placeholder-label="Container">
+                    <div class="row" data-sf-element="Row">
+                        <div id="Body_C049_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1"
+                            data-placeholder-label="Column 1">
+                            <div>
+                                <div>
+                                    <h2>What is <em>LETRS</em>?</h2>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <p><em>LETRS</em><sup>&reg;</sup> (<em>Language Essentials for Teachers of Reading
+                                            and Spelling</em>) is professional development
+                                        that provides the foundational knowledge necessary to understand how students
+                                        learn to
+                                        read, write, and spell&mdash;and why some struggle. Through <em>LETRS</em>,
+                                        educators gain a
+                                        deeper understanding of language structure and how to help struggling readers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#myModal">
+                                Launch demo modal
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- <div class="section container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="mb-20">August 2020</h2>
+
+                            <table class="table table-striped table-bordered letrs-table">
+                                <thead>
+                                    <tr>
+                                        <th>Sun</th>
+                                        <th>Mon</th>
+                                        <th>Tue</th>
+                                        <th>Wed</th>
+                                        <th>Thu</th>
+                                        <th>Fri</th>
+                                        <th>Sat</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4
+                                            <p class="pm">
+                                                Unit 1, Part 1 AM
+                                            </p>
+                                            <p class="am">
+                                                Unit 5, Part 1 PM
+                                            </p>
+                                        </td>
+                                        <td>5</td>
+                                        <td>6
+                                            <p class="pm">
+                                                Unit 1, Part 2 AM
+                                            </p>
+                                            <p class="am">
+                                                Unit 5, Part 2 PM
+                                            </p>
+                                        </td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>10</td>
+                                        <td>11
+                                            <p class="pm">
+                                                Unit 2, Part 1 PM
+                                            </p>
+                                            <p class="am">
+                                                Unit 6, Part 1 AM
+                                            </p>
+                                        </td>
+                                        <td>12</td>
+                                        <td>13
+                                            <p class="pm">
+                                                Unit 2, Part 2 PM
+                                            </p>
+                                            <p class="am">
+                                                Unit 6, Part 2 AM
+                                            </p>
+                                        </td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td>18
+                                            <p class="pm">
+                                                Unit 3, Part 1 PM
+                                            </p>
+                                            <p class="am">
+                                                Unit 7, Part 1 AM
+                                            </p>
+                                        </td>
+                                        <td>19</td>
+                                        <td>20
+                                            <p class="pm">
+                                                Unit 3, Part 2 PM
+                                            </p>
+                                            <p class="am">
+                                                Unit 7, Part 2 AM
+                                            </p>
+                                        </td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td>24</td>
+                                        <td>25
+                                            <p class="am">
+                                                Unit 4, Part 1 AM
+                                            </p>
+                                            <p class="pm">
+                                                Unit 8, Part 1 PM
+                                            </p>
+                                        </td>
+                                        <td>26</td>
+                                        <td>27
+                                            <p class="am">
+                                                Unit 4, Part 2 AM
+                                            </p>
+                                            <p class="pm">
+                                                Unit 8, Part 2 PM
+                                            </p>
+                                        </td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td>31</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <footer class="site-footer">
+                <div class="sitemap-footer-wrapper">
+                    <div class="site-footer__sitemap hidden-xs" data-sf-element="Sitemap">
+                        <div class="container">
+                            <div class="row">
+                                <div id="Footer_T858597B0203_Col00"
+                                    class="sf_colsIn col-sm-12 site-footer__sitemap__heading" data-sf-element="Heading"
+                                    data-placeholder-label="Heading">
+                                    <div class="row" data-sf-element="Row">
+                                        <div id="Footer_T858597B0248_Col00" class="sf_colsIn col-md-12"
+                                            data-sf-element="Column 1" data-placeholder-label="Column 1">
+                                            <div>
+                                                <div><img alt="Voyager Sopris Learning logo"
+                                                        class="logo-footer mt-30 mb-50"
+                                                        src="https://www.voyagersopris.com/images/default-source/logos/vsl-logo-white.png?sfvrsn=1ffab312_2"
+                                                        width="300" /></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" data-sf-element="Row">
+                                        <div id="Footer_T858597B0204_Col00" class="sf_colsIn col-md-2"
+                                            data-placeholder-label="Column 1" data-sf-element="Column 1">
+                                            <div>
+                                                <div>
+                                                    <p class="section-heading">LITERACY</p>
+                                                    <div class="literacy-ruleline"></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <p><a href="/literacy/language-live">LANGUAGE!
+                                                            Live</a></p>
+                                                    <p><a href="/literacy/language">LANGUAGE!</a>
+                                                    </p>
+                                                    <p><a href="/literacy/read-well">Read
+                                                            Well</a></p>
+                                                    <p><a href="/literacy/rewards">REWARDS</a></p>
+                                                    <p><a href="/literacy/step-up-to-writing">Step
+                                                            Up to
+                                                            Writing</a></p>
+                                                    <p><a href="/literacy/voyager-passport">Voyager
+                                                            Passport</a>
+                                                    </p>
+                                                    <p><a href="/dyslexia">Dyslexia
+                                                            Solutions</a></p>
+                                                    <p><a href="/literacy" style="text-decoration:underline;">All
+                                                            Literacy</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="Footer_T858597B0204_Col01" class="sf_colsIn col-md-2"
+                                            data-placeholder-label="Column 2" data-sf-element="Column 2">
+                                            <div>
+                                                <div>
+                                                    <p class="section-heading">MATH</p>
+                                                    <div class="math-ruleline"></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <p><a href="/math/inside-algebra">Inside
+                                                            Algebra</a></p>
+                                                    <p><a href="/math/transmath">TransMath</a></p>
+                                                    <p><a href="/math/vmath">Vmath</a></p>
+                                                    <p><a href="/math/vmathlive">VmathLive</a></p>
+                                                    <p><a href="/math/vmath-summer-adventure">Vmath
+                                                            Summer
+                                                            Adventure</a></p>
+                                                    <p><a href="/math" style="text-decoration:underline;">All Math</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="Footer_T858597B0204_Col02" class="sf_colsIn col-md-3"
+                                            data-placeholder-label="Column 3" data-sf-element="Column 3">
+                                            <div>
+                                                <div>
+                                                    <p class="section-heading">PROFESSIONAL&nbsp;DEVELOPMENT</p>
+                                                    <div class="pd-ruleline"></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <p><a href="/professional-development/letrs">LETRS Suite</a>
+                                                    </p>
+                                                    <p><a href="/letrs-aligned-programs">LETRS-aligned Solutions</a></p>
+                                                    <p><a href="/professional-development/literacy-symposium">Literacy
+                                                            Symposium</a></p>
+                                                    <p><a href="/professional-development/numbers">NUMBERS</a></p>
+                                                    <p><a href="/professional-development"
+                                                            style="text-decoration:underline;">All
+                                                            Professional
+                                                            Development</a></p>
+                                                    <div>&nbsp;</div>
+                                                    <p class="section-heading">ASSESSMENT</p>
+                                                    <div class="assessments-ruleline"></div>
+                                                    <p><a href="/assessment/acadience/suite">Acadience Suite</a></p>
+                                                    <p><a href="/product/assessment/clearsight/clearsight-overview">ClearSight
+                                                            Assessments</a></p>
+                                                    <p><a href="/product/assessment"
+                                                            style="text-decoration:underline;">All Assessment</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="Footer_T858597B0204_Col03" class="sf_colsIn col-md-2"
+                                            data-placeholder-label="Column 4" data-sf-element="Column 4">
+                                            <div>
+                                                <div>
+                                                    <p class="section-heading">TOPICS</p>
+                                                    <div class="assessments-ruleline"></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <p><a href="/covid-slide">COVID Learning Loss</a></p>
+                                                    <p><a href="/remote-learning">Remote Learning</a></p>
+                                                    <p><a href="/dyslexia">Dyslexia</a></p>
+                                                    <p><a href="/reading-intervention">Reading Intervention</a></p>
+                                                    <p><a href="/literacy/language-live/technology-tips">Using
+                                                            Technology with Literacy Intervention</a></p>
+                                                    <p><a href="/sites/i-am-more-home">Believe
+                                                            Literacy Is
+                                                            Possible</a></p>
+                                                    <p><a href="https://www.voyagersopris.com/essa/">ESSA
+                                                            Resources</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="Footer_T858597B0204_Col04" class="sf_colsIn col-md-3 company-info"
+                                            data-placeholder-label="Column 5" data-sf-element="Column 5">
+                                            <div>
+                                                <div>
+                                                    <p class="section-heading">LET'S CONNECT</p>
+                                                    <div class="assessments-ruleline"></div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <p><a href="/about-us">Who We Are</a>
+                                                    </p>
+                                                    <p><a href="/contact-us">Contact Us</a>
+                                                    </p>
+                                                    <p><a href="/edview360">Read / Listen /
+                                                            Watch</a></p>
+                                                    <p><a href="/conferences-and-events">Upcoming
+                                                            Events</a></p>
+                                                    <p><a href="http://www.cambiumlearning.com/careers/">Careers</a>
+                                                    </p>
+                                                    <p style="line-height:1.3;"><strong>Call Us:
+                                                            800.547.6747</strong><br />Monday through Friday
+                                                        <br />8:00 a.m.&ndash;5:30 p.m.<br />Central Time</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-footer__subfooter">
+                    <div class="container">
+                        <div class="row" data-sf-element="Subfooter">
+                            <div id="Footer_T858597B0203_Col01" class="sf_colsIn site-footer__subfooter__copyright"
+                                data-sf-element="Copyright" data-placeholder-label="Copyright">
+                                <div>
+                                    <div>
+                                        <div class="container text-center">
+                                            <div class="row mb-20">
+                                                <div class="col-md-12 social-media-icons"><a
+                                                        href="https://www.facebook.com/VoyagerSopris/"
+                                                        target="_blank"><img alt="Facebook"
+                                                            src="https://www.voyagersopris.com/images/default-source/icons/social-media-footer-icons-facebook.png?sfvrsn=fdc38a7e_2" /></a>
+                                                    <a href="https://twitter.com/VoyagerSopris" target="_blank">
+                                                        <img alt="Twitter"
+                                                            src="https://www.voyagersopris.com/images/default-source/icons/social-media-footer-icons-twitter.png?sfvrsn=d2533c7f_2" /></a>
+                                                    <a href="https://www.linkedin.com/company/voyager-sopris-learning"
+                                                        target="_blank">
+                                                        <img alt="LinkedIn"
+                                                            src="https://www.voyagersopris.com/images/default-source/icons/social-media-footer-icons-linkedin.png?sfvrsn=306f7ca0_2" /></a>
+                                                    <a href="https://www.instagram.com/voyagersopris/" target="_blank">
+                                                        <img alt="Instagram"
+                                                            src="https://www.voyagersopris.com/images/default-source/icons/social-media-footer-icons-instagram.png?sfvrsn=1df0466b_2" /></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>&copy; Copyright 2020 Voyager Sopris Learning&nbsp;&nbsp;&nbsp;<a
+                                            href="/terms-conditions">PRIVACY POLICY</a></div>
+                                </div>
+                            </div>
+                            <div id="Footer_T858597B0203_Col02" class="sf_colsIn site-footer__subfooter__nav"
+                                data-sf-element="Subfooter Nav" data-placeholder-label="Subfooter Nav">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script
+                src="https://www.voyagersopris.com/Frontend-Assembly/Telerik.Sitefinity.Frontend.Search/Mvc/Scripts/SearchBox/Search-box.js?package=Voyager"
+                type="text/javascript"></script>
+
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+            <script src="https://www.voyagersopris.com/ResourcePackages/Voyager/assets/dist/js/debounce-on.js"></script>
+            <script src="https://www.voyagersopris.com/ResourcePackages/Voyager/assets/dist/js/lib/jquery.fitvids.js">
+            </script>
+            <script src="https://www.voyagersopris.com/ResourcePackages/Voyager/assets/dist/js/global.js"></script>
+            <script src="https://www.voyagersopris.com/ResourcePackages/Voyager/assets/dist/js/image-to-background.js">
+            </script>
+            <script
+                src="https://www.voyagersopris.com/ResourcePackages/Voyager/assets/dist/js/toggle-class-with-trigger.js">
+            </script>
+            <script src="https://www.voyagersopris.com/ResourcePackages/Voyager/assets/dist/js/multiline-ellipse.js">
+            </script>
+            <script src="https://use.typekit.net/akn0hdz.js"></script>
+            <script>
+                try {
+                    Typekit.load({
+                        async: true
+                    });
+                } catch (e) {}
+            </script>
+        </div>
+    </div>
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <img src="http://go.voyagersopris.com/l/207592/2018-10-03/7v7qx/207592/71545/LetrsLogo.png" alt="LETRS logo" class="letrs-logo-modal">
+          <h4 class="modal-title" id="myModalLabel">Public Training Unit</h4>
+        </div>
+        <div class="modal-body">
+            <div class="section container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="mb-20">August 2020</h2>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <p>
+                            <strong>Training Times</strong>
+                        </p>
+                        <p>
+                            <em>All times are listed in Central Time</em>
+                        </p>
+                        
+                        <p class="am">
+                            AM = 9:00 am – 12:00 pm 
+                        </p>
+                        <p class="pm">
+                            PM = 2:00 pm – 5:00 pm
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- AUGUST -->
+                        
+                        <table class="table table-striped table-bordered letrs-table">
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4
+                                        <p class="pm">
+                                            Unit 1, Part 1 AM
+                                        </p>
+                                        <p class="am">
+                                            Unit 5, Part 1 PM
+                                        </p>
+                                    </td>
+                                    <td>5</td>
+                                    <td>6
+                                        <p class="pm">
+                                            Unit 1, Part 2 AM
+                                        </p>
+                                        <p class="am">
+                                            Unit 5, Part 2 PM
+                                        </p>
+                                    </td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11
+                                        <p class="pm">
+                                            Unit 2, Part 1 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 6, Part 1 AM
+                                        </p>
+                                    </td>
+                                    <td>12</td>
+                                    <td>13
+                                        <p class="pm">
+                                            Unit 2, Part 2 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 6, Part 2 AM
+                                        </p>
+                                    </td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18
+                                        <p class="pm">
+                                            Unit 3, Part 1 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 7, Part 1 AM
+                                        </p>
+                                    </td>
+                                    <td>19</td>
+                                    <td>20
+                                        <p class="pm">
+                                            Unit 3, Part 2 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 7, Part 2 AM
+                                        </p>
+                                    </td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25
+                                        <p class="am">
+                                            Unit 4, Part 1 AM
+                                        </p>
+                                        <p class="pm">
+                                            Unit 8, Part 1 PM
+                                        </p>
+                                    </td>
+                                    <td>26</td>
+                                    <td>27
+                                        <p class="am">
+                                            Unit 4, Part 2 AM
+                                        </p>
+                                        <p class="pm">
+                                            Unit 8, Part 2 PM
+                                        </p>
+                                    </td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                </tr>
+                                <tr>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            <strong>Registration:</strong>
+                        </p> 
+                        <ul>
+                            <li>Register at <a href="https://www.voyagersopris.com/professional-development/letrs/training-support" target="_blank" rel="noopener noreferrer">https://www.voyagersopris.com/professional-development/letrs/training-support</a></li>
+                            <li>Make payment of $300 per Unit training (includes Parts 1 & 2)</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="mb-20">September 2020</h2>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <p>
+                            <strong>Training Times</strong>
+                        </p>
+                        <p>
+                            <em>All times are listed in Central Time</em>
+                        </p>
+                        
+                        <p class="am">
+                            AM = 9:00 am – 12:00 pm 
+                        </p>
+                        <p class="pm">
+                            PM = 2:00 pm – 5:00 pm
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- AUGUST -->
+                        
+                        <table class="table table-striped table-bordered letrs-table">
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4
+                                        <p class="pm">
+                                            Unit 1, Part 1 AM
+                                        </p>
+                                        <p class="am">
+                                            Unit 5, Part 1 PM
+                                        </p>
+                                    </td>
+                                    <td>5</td>
+                                    <td>6
+                                        <p class="pm">
+                                            Unit 1, Part 2 AM
+                                        </p>
+                                        <p class="am">
+                                            Unit 5, Part 2 PM
+                                        </p>
+                                    </td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11
+                                        <p class="pm">
+                                            Unit 2, Part 1 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 6, Part 1 AM
+                                        </p>
+                                    </td>
+                                    <td>12</td>
+                                    <td>13
+                                        <p class="pm">
+                                            Unit 2, Part 2 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 6, Part 2 AM
+                                        </p>
+                                    </td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18
+                                        <p class="pm">
+                                            Unit 3, Part 1 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 7, Part 1 AM
+                                        </p>
+                                    </td>
+                                    <td>19</td>
+                                    <td>20
+                                        <p class="pm">
+                                            Unit 3, Part 2 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 7, Part 2 AM
+                                        </p>
+                                    </td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25
+                                        <p class="am">
+                                            Unit 4, Part 1 AM
+                                        </p>
+                                        <p class="pm">
+                                            Unit 8, Part 1 PM
+                                        </p>
+                                    </td>
+                                    <td>26</td>
+                                    <td>27
+                                        <p class="am">
+                                            Unit 4, Part 2 AM
+                                        </p>
+                                        <p class="pm">
+                                            Unit 8, Part 2 PM
+                                        </p>
+                                    </td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                </tr>
+                                <tr>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            <strong>Registration:</strong>
+                        </p> 
+                        <ul>
+                            <li>Register at <a href="https://www.voyagersopris.com/professional-development/letrs/training-support" target="_blank" rel="noopener noreferrer">https://www.voyagersopris.com/professional-development/letrs/training-support</a></li>
+                            <li>Make payment of $300 per Unit training (includes Parts 1 & 2)</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="mb-20">October 2020</h2>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <p>
+                            <strong>Training Times</strong>
+                        </p>
+                        <p>
+                            <em>All times are listed in Central Time</em>
+                        </p>
+                        
+                        <p class="am">
+                            AM = 9:00 am – 12:00 pm 
+                        </p>
+                        <p class="pm">
+                            PM = 2:00 pm – 5:00 pm
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- AUGUST -->
+                        
+                        <table class="table table-striped table-bordered letrs-table">
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4
+                                        <p class="pm">
+                                            Unit 1, Part 1 AM
+                                        </p>
+                                        <p class="am">
+                                            Unit 5, Part 1 PM
+                                        </p>
+                                    </td>
+                                    <td>5</td>
+                                    <td>6
+                                        <p class="pm">
+                                            Unit 1, Part 2 AM
+                                        </p>
+                                        <p class="am">
+                                            Unit 5, Part 2 PM
+                                        </p>
+                                    </td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11
+                                        <p class="pm">
+                                            Unit 2, Part 1 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 6, Part 1 AM
+                                        </p>
+                                    </td>
+                                    <td>12</td>
+                                    <td>13
+                                        <p class="pm">
+                                            Unit 2, Part 2 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 6, Part 2 AM
+                                        </p>
+                                    </td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18
+                                        <p class="pm">
+                                            Unit 3, Part 1 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 7, Part 1 AM
+                                        </p>
+                                    </td>
+                                    <td>19</td>
+                                    <td>20
+                                        <p class="pm">
+                                            Unit 3, Part 2 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 7, Part 2 AM
+                                        </p>
+                                    </td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25
+                                        <p class="am">
+                                            Unit 4, Part 1 AM
+                                        </p>
+                                        <p class="pm">
+                                            Unit 8, Part 1 PM
+                                        </p>
+                                    </td>
+                                    <td>26</td>
+                                    <td>27
+                                        <p class="am">
+                                            Unit 4, Part 2 AM
+                                        </p>
+                                        <p class="pm">
+                                            Unit 8, Part 2 PM
+                                        </p>
+                                    </td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                </tr>
+                                <tr>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            <strong>Registration:</strong>
+                        </p> 
+                        <ul>
+                            <li>Register at <a href="https://www.voyagersopris.com/professional-development/letrs/training-support" target="_blank" rel="noopener noreferrer">https://www.voyagersopris.com/professional-development/letrs/training-support</a></li>
+                            <li>Make payment of $300 per Unit training (includes Parts 1 & 2)</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="mb-20">November 2020</h2>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <p>
+                            <strong>Training Times</strong>
+                        </p>
+                        <p>
+                            <em>All times are listed in Central Time</em>
+                        </p>
+                        
+                        <p class="am">
+                            AM = 9:00 am – 12:00 pm 
+                        </p>
+                        <p class="pm">
+                            PM = 2:00 pm – 5:00 pm
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- AUGUST -->
+                        
+                        <table class="table table-striped table-bordered letrs-table">
+                            <thead>
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4
+                                        <p class="pm">
+                                            Unit 1, Part 1 AM
+                                        </p>
+                                        <p class="am">
+                                            Unit 5, Part 1 PM
+                                        </p>
+                                    </td>
+                                    <td>5</td>
+                                    <td>6
+                                        <p class="pm">
+                                            Unit 1, Part 2 AM
+                                        </p>
+                                        <p class="am">
+                                            Unit 5, Part 2 PM
+                                        </p>
+                                    </td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11
+                                        <p class="pm">
+                                            Unit 2, Part 1 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 6, Part 1 AM
+                                        </p>
+                                    </td>
+                                    <td>12</td>
+                                    <td>13
+                                        <p class="pm">
+                                            Unit 2, Part 2 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 6, Part 2 AM
+                                        </p>
+                                    </td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18
+                                        <p class="pm">
+                                            Unit 3, Part 1 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 7, Part 1 AM
+                                        </p>
+                                    </td>
+                                    <td>19</td>
+                                    <td>20
+                                        <p class="pm">
+                                            Unit 3, Part 2 PM
+                                        </p>
+                                        <p class="am">
+                                            Unit 7, Part 2 AM
+                                        </p>
+                                    </td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25
+                                        <p class="am">
+                                            Unit 4, Part 1 AM
+                                        </p>
+                                        <p class="pm">
+                                            Unit 8, Part 1 PM
+                                        </p>
+                                    </td>
+                                    <td>26</td>
+                                    <td>27
+                                        <p class="am">
+                                            Unit 4, Part 2 AM
+                                        </p>
+                                        <p class="pm">
+                                            Unit 8, Part 2 PM
+                                        </p>
+                                    </td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                </tr>
+                                <tr>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            <strong>Registration:</strong>
+                        </p> 
+                        <ul>
+                            <li>Register at <a href="https://www.voyagersopris.com/professional-development/letrs/training-support" target="_blank" rel="noopener noreferrer">https://www.voyagersopris.com/professional-development/letrs/training-support</a></li>
+                            <li>Make payment of $300 per Unit training (includes Parts 1 & 2)</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
