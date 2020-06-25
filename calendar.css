@@ -5,7 +5,15 @@ table {
 table.letrs-table thead {
    background: #005587;
    color: #ffffff;
-   text-align: center;
+}
+
+table.letrs-table thead th:first-child, table.letrs-table thead th:last-child {
+    background: #333333;
+}
+
+table.letrs-table p {
+    margin: 0;
+    font-size: .8rem;
 }
 
 .modal-body p {
@@ -13,9 +21,13 @@ table.letrs-table thead {
     margin: 0;
 }
 
-table.letrs-table p {
-    margin: 0;
-    font-size: .8rem;
+.modal-body p.mt-20 {
+    margin-top: 20px;
+}
+
+.modal-body .btn-success:hover, .modal-body .btn-success:focus {
+    color: #ffffff;
+    border-color: #ffffff;
 }
 
 .am {
